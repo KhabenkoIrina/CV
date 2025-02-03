@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Следующий мета тег "viewport" очень важен для правильного отображения "отзывчивых сайтов" на разных устройствах.
+      Браузеры хотят быть очень услужливыми и пытатться помочь нам, отображая сайты совсем не так, как нужно.
+      Совсем как "Двое из ларца"
+
+      Например - попытаться отобразить всю страницу разом, хотя она должна прокручиваться на 10 экранов,
+      или увеличить шрифт непонятным образом, когда мы переворачиваем телефон горизонтально 
+      1. width=device-with - говорит браузеру "дружище, ширина моей страницы ровно такая, какой ширины твой экран.
+      Не надо ничего подгонять, я сам этим займусь"
+      2. initial-scale=1 - говорит браузеру "не вздумай ничего приближать/отдалять по своему усмотрению, я сам
+      озабочусь тем, чтобы при разной ширине всё отображалось хорошо"
+
+      https://www.w3schools.com/css/css_rwd_viewport.asp
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+       <!--
+    Тайтл отобржается как название закладки в барузере
+    -->
+    <title>Ирина QA</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="any" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="name">Ирина Хабенко</div>
+    <div class="name">QA - engineer</div>
+
+    <img src="./me.png" alt="Это я">
+
+
+
+    <div class="block">
+      <div class="block-title">Контакты:</div>
+      <div class="block-entries">
+        <div class="entry">
+          <a href="http://t.me/Khabenko_Irina" target="_blank"> Telegram</a>
+        </div>
+        <div class="entry">
+          <a href="mailto:irinahabenko9@gmail.com">irinahabenko9@gmail.com</a>
+        </div>
+        <div class="entry">
+          <a href="https://vk.com/khabenko.irina" target="_blank">Вконтакте</a>
+        </div>
+        <div class="entry">
+          <a href="https://wa.me/+79643401409" target="_blank">WhatsApp</a>
+        </div>
+        <div class="entry">
+          <a href="https://github.com/German-D" target="_blank">Github</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">Навыки и стек:</div>
+      <div class="entry">
+        <a target="_blank"> Developer Tools </a>
+      </div>
+      <div class="entry">
+        <a
+          target="_blank"
+        >
+          Postman
+        </a>
+      </div>
+      <div class="entry">
+        <a target="_blank">Swagger</a>
+      </div>
+      <div class="entry">
+        <a target="_blank"
+        >
+          MySQL
+        </a>
+      </div>
+      <div class="entry">
+        <a target="_blank">
+          REST-API, SOAP
+        </a>
+      </div>
+    </div>
+
+
+<div class="block">
+      <div class="block-title">Остались вопросы, пиши:</div>
+      <div class="entry">
+        </div>
+
+<form id="Оставить запрос">
+ <label for="name">Имя:</label>
+ <input type="text" id="name" name="name" required>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required>
+ <label for="message">Сообщение:</label>
+ <textarea id="message" name="message" required></textarea>
+ <button type="submit">Отправить</button>
+</form>
+  </body>
+</html>
